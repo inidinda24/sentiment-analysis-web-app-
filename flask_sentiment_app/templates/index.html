@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klasifikasi Sentimen</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffbe7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 700px;
+      width: 90%;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      margin-bottom: 25px;
+      color: #ff69b4;
+      font-size: 28px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      resize: vertical;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      transition: box-shadow 0.2s ease;
+    }
+
+    textarea:focus {
+      box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+      outline: none;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #ff4fa2;
+      transform: scale(1.05);
+    }
+
+    .emoji {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .note {
+      margin-top: 16px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+
+  <script>
+    // Deteksi enter dan submit otomatis
+    window.addEventListener('DOMContentLoaded', function () {
+      const textarea = document.getElementById('text');
+      textarea.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          this.form.submit();
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">🧠✨</div>
+    <h1>Klasifikasi Sentimen</h1>
+    <form method="POST" action="/predict">
+      <label for="text">Masukkan ulasan Anda:</label>
+      <textarea id="text" name="text" placeholder="Tulis ulasannya disini ya😊" required></textarea>
+      <button type="submit">🔍 Klasifikasikan</button>
+    </form>
+    <div class="note">Tekan <b>Enter</b> untuk langsung kirim (Shift+Enter untuk baris baru)</div>
+  </div>
+</body>
+</html>

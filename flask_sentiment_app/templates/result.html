@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasil Klasifikasi Sentimen</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffbe7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 40px 30px;
+      max-width: 700px;
+      width: 90%;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #ff69b4;
+      font-size: 28px;
+    }
+
+    .emoji {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .result-box {
+      margin-top: 20px;
+      border: 3px dashed #ff69b4;
+      border-radius: 12px;
+      padding: 30px 20px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #ff69b4;
+      background-color: #fff0f5;
+      word-wrap: break-word;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      background-color: #ff69b4;
+      color: white;
+      padding: 12px 28px;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    a.button:hover {
+      background-color: #ff4fa2;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">🔍✨</div>
+    <h1>Hasil Klasifikasi</h1>
+    <div class="result-box">
+      {{ prediction }}
+    </div>
+    <a href="/" class="button">🔄 Coba Lagi</a>
+  </div>
+</body>
+</html>
