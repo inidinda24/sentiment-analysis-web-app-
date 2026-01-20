@@ -17,9 +17,8 @@ This project was developed as my undergraduate thesis and demonstrates the compl
 
 ## Dataset
 - **Source:** Google Spreadsheet (user reviews dataset)
-- **Data Type:** Textual data (reviews, ratings)
-- **Size:** Thousands of user reviews
-- **Target Group:** Users aged 19–33
+- **Data Type:** Textual data (name, age, and reviews)
+- **Size:** 462 of user reviews
 
 > *Note: Due to data privacy, this repository includes a sample dataset only.*
 
@@ -56,7 +55,7 @@ This project was developed as my undergraduate thesis and demonstrates the compl
    - Selected Random Forest based on performance metrics
 
 4. **Model Evaluation**
-   - Accuracy, precision, recall
+   - Accuracy, precision, recall, F1-Score
    - Achieved **95% accuracy** on the target age group
 
 5. **Deployment**
@@ -66,4 +65,32 @@ This project was developed as my undergraduate thesis and demonstrates the compl
 ---
 
 ## System Architecture
+<img width="181" height="242" alt="Systhematic Architecture drawio" src="https://github.com/user-attachments/assets/89902a6c-7727-4628-ad0a-33c06c45d93d" />
+
+---
+
+## Key Results
+- Random Forest sentiment classification model achieved high accuracy across user age segments
+- Highest model performance recorded in early adult users (19–33 years) with 95% accuracy
+- Model accuracy varied by age group:
+  * Teenagers: 85%
+  * Middle-aged adults: 80%
+  * Older adults: 75%
+- Sentiment classification performance was influenced by language style, sentence complexity, and emotional expression
+- Successfully implemented an end-to-end web-based sentiment analysis system using Flask for real-time prediction
+
+---
+
+## Business Insights & Recommendations
+- User feedback behavior differs significantly by age group and should be analyzed using age-based segmentation
+- Early adult users provide clearer and more consistent sentiment signals, making them ideal for automated sentiment monitoring
+- Older user segments may require complementary qualitative analysis due to more complex language patterns
+- Service improvement initiatives should be prioritized based on dominant sentiment trends per age segment
+- Sentiment analysis can be used as a continuous KPI for monitoring service quality in digital health platforms
+- The deployed system demonstrates scalability for real-time customer feedback analysis
+
+---
+
+
+
 
