@@ -1,13 +1,13 @@
 # End-to-End Sentiment Analysis System for User Reviews
 
-## 📌 Project Overview
+## Project Overview
 This project is an end-to-end sentiment analysis system designed to analyze user reviews and present actionable insights through a web-based interface. The system processes textual data stored in a spreadsheet, applies machine learning models for sentiment classification, and delivers results via a simple UI for non-technical users.
 
 This project was developed as my undergraduate thesis and demonstrates the complete data analytics workflow—from data ingestion and preprocessing to model deployment and user-facing visualization.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Automate sentiment classification of user reviews
 - Transform unstructured text data into actionable insights
 - Provide an accessible interface for stakeholders without technical background
@@ -15,7 +15,7 @@ This project was developed as my undergraduate thesis and demonstrates the compl
 
 ---
 
-## 📊 Dataset
+## Dataset
 - **Source:** Google Spreadsheet (user reviews dataset)
 - **Data Type:** Textual data (reviews, ratings)
 - **Size:** Thousands of user reviews
@@ -25,7 +25,7 @@ This project was developed as my undergraduate thesis and demonstrates the compl
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 ### Data Analysis & Modeling
 - Python  
@@ -42,7 +42,7 @@ This project was developed as my undergraduate thesis and demonstrates the compl
 
 ---
 
-## 🧠 Methodology
+## Methodology
 
 1. **Data Collection**
    - Imported user reviews from Google Spreadsheet
@@ -65,5 +65,5 @@ This project was developed as my undergraduate thesis and demonstrates the compl
 
 ---
 
-## 🧩 System Architecture
+## System Architecture
 
