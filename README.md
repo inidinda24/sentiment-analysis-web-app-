@@ -91,6 +91,23 @@ This project was developed as my undergraduate thesis and demonstrates the compl
 
 ---
 
+## Model Development
+- Google Colab Notebook:  
+  Remaja: https://colab.research.google.com/drive/12PvbFaweRmphyiS5kT4fk2BZTGDw2OXE?usp=sharing
+  Dewasa Awal: https://colab.research.google.com/drive/1mgcTf_eL0vUi9GsLHCks8aiu6Fn5uBzw?usp=sharing
+  Dewasa Menengah: https://colab.research.google.com/drive/1NQNsazADqD4mZMZScs161ffQe5fP7oaj?usp=sharing
+  Dewasa Lanjut: https://colab.research.google.com/drive/1W9aXaLD1l2V4w348G6DGQ59kdcuY5jaG?usp=sharing
+
+  ## Dataset
+- Source: Google Spreadsheet  
+  https://docs.google.com/spreadsheets/d/1YXubBT5NeTp2ik0sQ4D3QeuSbFWwU7J3ZgHC0L4cjAY/edit?usp=sharing
+
+  
+
+  
+  
+
+
 
 
 
