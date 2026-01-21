@@ -89,6 +89,13 @@ This project was developed as my undergraduate thesis and demonstrates the compl
 - Sentiment analysis can be used as a continuous KPI for monitoring service quality in digital health platforms
 - The deployed system demonstrates scalability for real-time customer feedback analysis
 
+## What I Learned in this project:
+- Building an end-to-end data analytics pipeline
+- Applying machine learning models to real-world text data
+- Deploying ML models using Flask
+- Communicating data insights through user-friendly interfaces
+- Bridging data analysis with business and operational needs
+
 ---
 
 ## Model Development
