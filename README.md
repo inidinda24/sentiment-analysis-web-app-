@@ -20,8 +20,6 @@ This project was developed as my undergraduate thesis and demonstrates the compl
 - **Data Type:** Textual data (name, age, and reviews)
 - **Size:** 462 of user reviews
 
-> *Note: Due to data privacy, this repository includes a sample dataset only.*
-
 ---
 
 ## Tools & Technologies
